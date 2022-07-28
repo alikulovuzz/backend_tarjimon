@@ -1,0 +1,6 @@
+tensorflow=2.7
+tensorflow_text
+numpy
+django
+django-cors-headers
+djangorestframework
