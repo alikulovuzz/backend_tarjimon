@@ -10,5 +10,5 @@ FROM python:3.9-slim-buster
 COPY --from=compile-image /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
-COPY bot /app/bot
+COPY bot /app/bot/.
 CMD ["python", "manage.py", "runserver"]
