@@ -4,7 +4,9 @@ from rest_framework import status
 from rest_framework import permissions
 from translateapi.models import Translate
 from .serializer import TranslateSerializer
-
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+import tensorflow as tf
 # Create your views here.
 import numpy as np
 
